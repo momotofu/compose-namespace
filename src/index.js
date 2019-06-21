@@ -1,4 +1,4 @@
-export function composeClass(mainClass, classPre) {
+export function composeNamespace(mainClass, classPre) {
 	if (classPre) {
 		let classesPre;
 

@@ -1,3 +1,3 @@
-const { composeClass } = require('./src/index.js')
+const { composeNamespace } = require('./src/index.js')
 
-exports.composeClass = composeClass
+exports.composeNamespace = composeNamespace

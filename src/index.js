@@ -1,4 +1,4 @@
-export function composeNamespace(mainClass, classPre) {
+function composeNamespace(mainClass, classPre) {
 	if (classPre) {
 		let classesPre;
 
@@ -34,4 +34,8 @@ export function composeNamespace(mainClass, classPre) {
 			return `${mainClass}-${inClasses[0]}`;
 		}
 	}
+}
+
+module.exports = {
+	composeNamespace,
 }

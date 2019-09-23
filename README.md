@@ -1,11 +1,11 @@
-# Compose Class
+# Compose Namespace
 
 Takes a main css class for a component and
 an optional overriding class or classes (array)
 and returns a function which constructs a class strings.
 
 ```
-function composeClass(
+function composeNamespace(
   string, [
       string of classes,
       single classString,
@@ -19,7 +19,7 @@ For example if given the main class of APMDrawer
 and the overriding class of className:
 
 ```
-const cc = composeClass('APMDrawer', 'className')
+const cc = composeNamespace('APMDrawer', 'className')
 
 cc('bg')
 // 'APMDrawer-bg className-bg'
@@ -27,7 +27,7 @@ cc('bg')
 cc('bg', 'container')
 // 'APMDrawer-bg className-bg APMDrawer-containter className-container'
 
-const cc = composeClass('mainClass', ['jam', 'cake', 'fig'])
+const cc = composeNamespace('mainClass', ['jam', 'cake', 'fig'])
 
 cc('jello', 'frosting')
 // 'mainClass-jello mainClass-frosting jam-jello
